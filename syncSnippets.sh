@@ -49,13 +49,13 @@ EOF
 
 function syncXcodesnippetsAndFileTemplatesFromOnlinestorage {
     #1
-    mkDirAbsolutely CodeSinppetsAndFileTemplates
-    #2
-    cd CodeSinppetsAndFileTemplates
-    #3
-    downloadCodesnippetsFromGit git@code.geekbang.org:app/ios-public-features.git
+#    mkDirAbsolutely CodeSinppetsAndFileTemplates
+#    #2
+#    cd CodeSinppetsAndFileTemplates
+#    #3
+#    downloadCodesnippetsFromGit git@code.geekbang.org:app/ios-public-features.git
     #4
-    cd ios-public-features/CodeSpecification
+    cd CodeSpecification
     #5
     mkDirAbsolutely ~/Library/Developer/Xcode/UserData/CodeSnippets/
     #6
@@ -67,7 +67,7 @@ function syncXcodesnippetsAndFileTemplatesFromOnlinestorage {
     #9
     cd ..
     #10
-    deleteTheFolderAbsolutely CodeSinppetsAndFileTemplates
+#    deleteTheFolderAbsolutely CodeSinppetsAndFileTemplates
 }
 
 syncXcodesnippetsAndFileTemplatesFromOnlinestorage
